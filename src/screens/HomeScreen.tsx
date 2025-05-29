@@ -15,9 +15,34 @@ export default function HomeScreen({ navigation }) {
   };
 
   useEffect(() => {
-    const unsubscribe = navigation.addListener('focus', carregarEventos);
+    const unsubscribe = navigation.addListener('focus', () => {
+      carregarEventos();
+      navigation.setOptions({
+        headerRight: () => (
+          <View style={{ flexDirection: 'row', gap: 30, marginRight: 16 }}>
+            <TouchableOpacity onPress={() => navigation.navigate('Localização')}>
+              <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Localização</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Tempo')}>
+              <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Tempo</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Prejuízo')}>
+              <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Prejuízo</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Recomendação')}>
+              <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Recomendação</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={handleLogout}>
+              <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Sair</Text>
+            </TouchableOpacity>
+          </View>
+        ),
+      });
+    });
+
     return unsubscribe;
   }, [navigation]);
+
 
   const limparTudo = () => {
     const confirmado = window.confirm('Deseja realmente apagar todos os registros?');
@@ -35,7 +60,7 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <CustomButton title="Registrar Novo Evento" onPress={() => navigation.navigate('Cadastrar Evento')} />
+      <CustomButton title="Registrar Evento" onPress={() => navigation.navigate('Cadastrar Evento')} />
       <Text style={styles.title}>Eventos Registrados</Text>
       <FlatList
         data={eventos}
@@ -50,7 +75,6 @@ export default function HomeScreen({ navigation }) {
         )}
       />
       <CustomButton title="Limpar Tudo" color="red" onPress={limparTudo} disabled={eventos.length === 0} />
-      <CustomButton title="Sair" color="#555" onPress={handleLogout} />
     </View>
   );
 }

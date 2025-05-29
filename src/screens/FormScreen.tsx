@@ -41,7 +41,7 @@ export default function FormScreen({ navigation }) {
         <Text style={styles.label}>Prejuízos Causados:</Text>
         <TextInput style={styles.input} value={prejuizos} onChangeText={setPrejuizos} />
 
-        <Text style={styles.label}>Recomendações:</Text>
+        <Text style={styles.label}>Recomendação:</Text>
         <TextInput style={styles.input} value={recomendacoes} onChangeText={setRecomendacoes} />
 
         <CustomButton title="Salvar Evento" onPress={handleSubmit} />

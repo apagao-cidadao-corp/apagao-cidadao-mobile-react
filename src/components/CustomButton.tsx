@@ -23,7 +23,7 @@ export default function CustomButton({ title, onPress, color = '#1e90ff', disabl
 const styles = StyleSheet.create({
   button: {
     padding: 12,
-    borderRadius: 8,
+    borderRadius: 24,
     alignItems: 'center',
     marginVertical: 8,
     alignSelf: 'center',

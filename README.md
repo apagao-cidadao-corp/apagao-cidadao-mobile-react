@@ -1,4 +1,4 @@
-# ⚡ Apagão Cidadão – Plataforma de Crowdsourcing
+# Apagão Cidadão – Plataforma de Crowdsourcing
 
 Este projeto é uma aplicação **React Native** com **AsyncStorage** que permite ao cidadão registrar e visualizar eventos de falta de energia elétrica. A ideia é fomentar um monitoramento colaborativo, possibilitando o mapeamento dos apagões por região, com dados como localização, duração, prejuízos e recomendações.
 

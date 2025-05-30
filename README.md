@@ -68,7 +68,7 @@ App.tsx                   # Entrada principal
 
 3. **Execute a aplicação**:
    ```bash
-   npx expo start --web
+   npx expo start
    ```
 
 4. Acesse pelo navegador o QR Code ou o localhost exibido.

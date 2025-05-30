@@ -4,6 +4,14 @@ Este projeto é uma aplicação **React Native** com **AsyncStorage** que permit
 
 ---
 
+## 🤝 Autores
+
+- Eduardo Akira Murata (RM98713)
+- Wesley Souza de Oliveira (RM97874)
+- Deivison Pertel (RM550803)
+
+---
+
 ## 📱 Funcionalidades
 
 - Autenticação com **Login e Cadastro**
@@ -87,11 +95,44 @@ App.tsx                   # Entrada principal
 
 ---
 
-## 🤝 Autores
+## 📷 Evidências de Funcionamento
 
-- Eduardo Akira Murata (RM98713)
-- Wesley Souza de Oliveira (RM97874)
-- Deivison Pertel (RM550803)
+### ▶️ Tela de Login
+
+![Tela de Login](./assets/login.png)
+
+---
+
+### ▶️ Tela de Registro
+
+![Tela de Registro](./assets/registro.png)
+
+---
+
+### ▶️ Tela Principal
+
+![Tela Principal](./assets/home.png)
+
+---
+
+### ▶️ Tela de Cadastro
+
+![Tela Cadastro](./assets/cadastro.png)
+
+Obs: Sistema pensado em execução web (windows). Ao cadastrar eventos em geral, ele gera um Alert com um response, como esse:
+
+![Alert](./assets/alert.png)
+---
+
+### ▶️ Tela Principal com Eventos
+
+![Tela Principal com Eventos](./assets/home-populada.png)
+
+---
+
+### ▶️ Tela de Recomendações
+
+![Tela de Recomendações](./assets/recomendacao.png)
 
 ---
 

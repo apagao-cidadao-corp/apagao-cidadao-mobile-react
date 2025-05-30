@@ -23,7 +23,7 @@ export default function HomeScreen({ navigation }) {
             <TouchableOpacity onPress={() => navigation.navigate('Localização')}>
               <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Localização</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => navigation.navigate('Tempo')}>
+            <TouchableOpacity onPress={() => navigation.navigate('Tempo Interrupção')}>
               <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Tempo</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate('Prejuízo')}>

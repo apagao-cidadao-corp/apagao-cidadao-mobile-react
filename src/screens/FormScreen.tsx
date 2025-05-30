@@ -25,24 +25,21 @@ export default function FormScreen({ navigation }) {
     eventos.push(novoEvento);
     await saveData('eventos', eventos);
 
-    Alert.alert('Evento salvo com sucesso!');
+    window.alert('Evento salvo com sucesso!');
     navigation.reset({ index: 0, routes: [{ name: 'Apagão Cidadão' }] });
   };
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.card}>
-        <Text style={styles.label}>Localização Atingida:</Text>
-        <TextInput style={styles.input} value={localizacao} onChangeText={setLocalizacao} />
+        <Text style={styles.label}>Localização Afetada:</Text>
+        <TextInput style={styles.input} value={localizacao} onChangeText={setLocalizacao} placeholder="Ex: Bairro Liberdade, São Paulo"/>
 
         <Text style={styles.label}>Tempo de Interrupção:</Text>
-        <TextInput style={styles.input} value={tempo} onChangeText={setTempo} />
+        <TextInput style={styles.input} value={tempo} onChangeText={setTempo} placeholder="Ex: 2 horas e 30 minutos"/>
 
-        <Text style={styles.label}>Prejuízos Causados:</Text>
-        <TextInput style={styles.input} value={prejuizos} onChangeText={setPrejuizos} />
-
-        <Text style={styles.label}>Recomendação:</Text>
-        <TextInput style={styles.input} value={recomendacoes} onChangeText={setRecomendacoes} />
+        <Text style={styles.label}>Prejuízo(s) Causado(s):</Text>
+        <TextInput style={styles.input} multiline numberOfLines={4} value={prejuizos} onChangeText={setPrejuizos} placeholder="Ex: Alimentos estragados, Perda de vendas, etc."/>
 
         <CustomButton title="Salvar Evento" onPress={handleSubmit} />
       </View>

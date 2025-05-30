@@ -16,11 +16,8 @@ export default function DetailsScreen({ route }) {
         <Text style={styles.label}>Tempo sem energia:</Text>
         <Text style={styles.value}>{evento.tempoInterrupcao}</Text>
 
-        <Text style={styles.label}>Prejuízos:</Text>
+        <Text style={styles.label}>Prejuízo(s):</Text>
         <Text style={styles.value}>{evento.prejuizos}</Text>
-
-        <Text style={styles.label}>Recomendação:</Text>
-        <Text style={styles.value}>{evento.recomendacoes}</Text>
 
         <Text style={styles.label}>Data:</Text>
         <Text style={styles.value}>{evento.data}</Text>

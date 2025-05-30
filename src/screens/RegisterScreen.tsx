@@ -10,10 +10,10 @@ export default function RegisterScreen({ navigation }) {
   const handleRegister = async () => {
     const success = await registerUser(email, senha);
     if (success) {
-      Alert.alert('Cadastro realizado', 'Você já pode fazer login');
+      window.alert('Cadastro realizado');
       navigation.goBack();
     } else {
-      Alert.alert('Erro', 'Usuário já cadastrado');
+      window.alert('Usuário já cadastrado');
     }
   };
 

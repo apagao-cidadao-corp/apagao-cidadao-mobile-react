@@ -12,7 +12,7 @@ export default function LoginScreen({ navigation, onLogin }) {
     if (success) {
       onLogin();
     } else {
-      Alert.alert('Erro', 'Credenciais inválidas');
+      window.alert('Credenciais inválidas');
     }
   };
 

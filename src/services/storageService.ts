@@ -1,14 +1,27 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export const saveData = async (key: string, value: any) => {
-  await AsyncStorage.setItem(key, JSON.stringify(value));
+  try {
+    await AsyncStorage.setItem(key, JSON.stringify(value));
+  } catch (e) {
+    console.error('Erro ao salvar:', e);
+  }
 };
 
 export const loadData = async (key: string) => {
-  const jsonValue = await AsyncStorage.getItem(key);
-  return jsonValue != null ? JSON.parse(jsonValue) : null;
+  try {
+    const jsonValue = await AsyncStorage.getItem(key);
+    return jsonValue != null ? JSON.parse(jsonValue) : null;
+  } catch (e) {
+    console.error('Erro ao carregar:', e);
+    return null;
+  }
 };
 
 export const clearStorage = async () => {
-  await AsyncStorage.clear();
+  try {
+    await AsyncStorage.clear();
+  } catch (e) {
+    console.error('Erro ao limpar o armazenamento:', e);
+  }
 };

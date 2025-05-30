@@ -19,7 +19,7 @@ Este projeto é uma aplicação **React Native** com **AsyncStorage** que permit
   - Localização afetada
   - Tempo de interrupção
   - Prejuízos observados
-  - Recomendações para futuras situações
+- Recomendações para futuras situações
 - Visualização de todos os eventos registrados
 - Detalhamento de cada evento
 - Tela de **Boas Práticas**
@@ -134,6 +134,12 @@ Obs: Sistema pensado em execução web (windows). Ao cadastrar eventos em geral,
 ### ▶️ Tela Principal com Eventos
 
 ![Tela Principal com Eventos](./assets/home-populada.png)
+
+---
+
+### ▶️ Detalhamento do Evento
+
+![Detalhamento do Evento](./assets/detalhamento.png)
 
 ---
 

@@ -6,9 +6,9 @@ Este projeto é uma aplicação **React Native** com **AsyncStorage** que permit
 
 ## 🤝 Autores
 
+- Deivison Pertel (RM550803)
 - Eduardo Akira Murata (RM98713)
 - Wesley Souza de Oliveira (RM97874)
-- Deivison Pertel (RM550803)
 
 ---
 

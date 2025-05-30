@@ -97,6 +97,13 @@ App.tsx                   # Entrada principal
 
 ## 📷 Evidências de Funcionamento
 
+
+### ▶️ Execução da aplicação
+
+![Tela do Terminal](./assets/terminal.png)
+
+---
+
 ### ▶️ Tela de Login
 
 ![Tela de Login](./assets/login.png)

@@ -20,15 +20,7 @@ export default function HomeScreen({ navigation }) {
       navigation.setOptions({
         headerRight: () => (
           <View style={{ flexDirection: 'row', gap: 30, marginRight: 16 }}>
-            <TouchableOpacity onPress={() => navigation.navigate('Localização')}>
-              <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Localização</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => navigation.navigate('Tempo Interrupção')}>
-              <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Tempo</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => navigation.navigate('Prejuízo')}>
-              <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Prejuízo</Text>
-            </TouchableOpacity>
+
             <TouchableOpacity onPress={() => navigation.navigate('Recomendação')}>
               <Text style={{ color: '#007bff', fontWeight: 'bold' }}>Recomendação</Text>
             </TouchableOpacity>
